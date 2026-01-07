@@ -1,0 +1,54 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "tolongin": "./bin/tolongin.js"
+  },
+  "scripts": {
+    "dev": "nodemon app",
+    "test": "nodemon --inspect --exitcrash app",
+    "seed": "sequelize db:seed:all",
+    "migrate": "sequelize db:migrate",
+    "migrate:fresh": "sequelize db:migrate:undo:all && sequelize db:migrate",
+    "migrate:fresh:seed": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.899.0",
+    "@aws-sdk/s3-request-presigner": "^3.899.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-session": "^1.17.3",
+    "http": "^0.0.1-security",
+    "ioredis": "^5.3.2",
+    "joi": "^17.12.1",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "matrix-js-sdk": "^30.3.0",
+    "mongoose": "^8.18.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.9.1",
+    "nodemon": "^3.0.2",
+    "passport": "^0.6.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "redis": "^5.8.2",
+    "sequelize": "^6.36.0",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3"
+  }
+}
