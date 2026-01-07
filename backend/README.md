@@ -17,13 +17,16 @@ Download seluruh package yang dibutuhkan :
 
 ## Configuration
 
-Ubah file .env.example ke .env dan ubah isinya sesuai dengan konfigurasi di komputer anda.
+Ubah file .env.example ke .env dan ubah isinya sesuai dengan konfigurasi di komputer anda.  Kemudian, jalankan migration :
 
+```bash
+  npx sequelize-cli db:migrate
+```
 
 
 ## Running Project
 
-Jalankan aplikasi front-end :
+Jalankan aplikasi backend :
 
 ```bash
   npm run dev
